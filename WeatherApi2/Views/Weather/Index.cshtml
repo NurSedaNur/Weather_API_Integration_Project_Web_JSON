@@ -1,0 +1,36 @@
+﻿@model WeatherResponse
+
+<h1 style="font-family: 'Roboto', sans-serif; font-size:50px; color: #60A2D7; text-align:center" >
+    <div class="rounded-pill" style="border-style: solid; border-width: 1px; border-color:#60A2D7;">Ankara Hava Durumu</div>
+</h1>
+<br />
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Tarih</th>
+            <th scope="col">Gün</th>
+            <th scope="col">Açıklama</th>
+            <th scope="col">Sıcaklık</th>
+            <th scope="col">Min</th>
+            <th scope="col">Max</th>
+            <th scope="col">Nem</th>
+            <th scope="col">İkon</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Result)
+        {
+            <tr>
+                <td>@item.Date</td>
+                <td>@item.Day</td>
+                <td>@item.Description</td>
+                <td>@item.Degree °C</td>
+                <td>@item.Min °C</td>
+                <td>@item.Max °C</td>
+                <td>@item.Humidity %</td>
+                <td><img src="@item.Icon" alt="resme alternatif yazı" height="50px" width="50px"></td>
+            </tr>
+        }
+    </tbody>
+</table>
