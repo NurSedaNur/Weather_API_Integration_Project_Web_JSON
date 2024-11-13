@@ -26,5 +26,22 @@ Bu proje, CollectAPI kullanarak hava durumu verilerini çeken ve görüntüleyen
 │       └── Index.cshtml        // Seçilen şehir için hava durumu verilerini gösterir
 └── wwwroot                     // Statik dosyalar ve bağımlılıklar
 ```
+## Bağımlılıklar
+
+- **ASP.NET Core MVC:** Web uygulamasının geliştirilmesi için kullanılan framework.
+- **RestSharp:** CollectAPI hava durumu servisine HTTP istekleri yapmak için kullanılan kütüphane.
+- **Newtonsoft.Json:** JSON veri serileştirme ve serileştirmeyi gerçekleştiren kütüphane.
+
+## Kullanım
+
+### API Anahtarını Ayarlama:
+
+1. CollectAPI adresinden bir API anahtarı alın.
+2. `WeatherService.cs` dosyasındaki `ApiKey` sabitine anahtarınızı ekleyin:
+   ```csharp
+   private const string ApiKey = "API_ANAHTARINIZ";
+   ```
+
+
 
 ![Adsız tasarım](https://github.com/user-attachments/assets/88cd6b55-4213-4753-b901-ceba1af0c0c9)
