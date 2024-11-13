@@ -47,6 +47,44 @@ Bu proje, CollectAPI kullanarak hava durumu verilerini çeken ve görüntüleyen
 1. Uygulamayı derleyin ve çalıştırın.
 2. Ana sayfaya gidin ve bir şehir adı girerek o şehir için hava durumu verilerini görüntüleyin.
 
+---
+# Weather API Project
+
+This project is an ASP.NET MVC web application that fetches and displays weather data using the CollectAPI. Users can select a city and view the weather information for that city, which includes temperature, humidity, and an icon representing the weather conditions.
+
+## Features
+
+- **City Selection:** Users can enter a city name to retrieve weather data for that city.
+- **Weather Details:** The displayed data includes date, day, current temperature, minimum and maximum temperatures, humidity, and a weather icon.
+- **Localized Content:** The application retrieves weather data in Turkish.
+
+## Project Structure
+
+```plaintext
+├── Controllers
+│   ├── HomeController.cs       // Handles the home page and city input form submission
+│   └── WeatherController.cs    // Fetches and displays weather data
+├── Models
+│   ├── WeatherResult.cs        // Represents individual weather data
+│   └── WeatherResponse.cs      // Contains a list of WeatherResult
+├── Services
+│   └── WeatherService.cs       // Interacts with the external weather API using RestSharp
+├── Views
+│   ├── Home
+│   │   └── Index.cshtml        // View for the city selection form
+│   └── Weather
+│       └── Index.cshtml        // Displays weather data for the selected city
+└── wwwroot                     // Static files and dependencies
+```
+
+
+
+
+
+
+
+
+
 ## Ekran Görüntüleri
 
 
