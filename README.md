@@ -25,5 +25,6 @@ Bu proje, CollectAPI kullanarak hava durumu verilerini çeken ve görüntüleyen
 │   └── Weather
 │       └── Index.cshtml        // Seçilen şehir için hava durumu verilerini gösterir
 └── wwwroot                     // Statik dosyalar ve bağımlılıklar
+```
 
 ![Adsız tasarım](https://github.com/user-attachments/assets/88cd6b55-4213-4753-b901-ceba1af0c0c9)
