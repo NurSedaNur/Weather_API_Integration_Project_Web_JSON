@@ -7,7 +7,6 @@
     public class WeatherController : Controller
     {
         //Bu sınıf; Hava durumu verisini almak ve View'a göndermek içindir.
-
         private readonly WeatherService _weatherService;
 
         public WeatherController()
@@ -17,10 +16,11 @@
         }
 
         // Hava durumu verilerini almak için bir action
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string city = "ankara")
         {
-            var weather = await _weatherService.GetWeatherAsync();// API'den hava durumu verilerini alıyoruz
-            return View(weather);// Veriyi View'a gönderiyoruz
+            var weather = await _weatherService.GetWeatherAsync(city);// API'den hava durumu verilerini alıyoruz
+            ViewBag.il = city;
+            return View(weather);
         }
     }
 }

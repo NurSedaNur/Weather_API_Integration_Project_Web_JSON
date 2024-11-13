@@ -1,8 +1,14 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<h1 style="font-family: 'Roboto', sans-serif; font-size:50px; color: #60A2D7; text-align:center">
+    <div class="rounded-pill" style="border-style: solid; border-width: 1px; border-color:#60A2D7;">
+        HAVA DURUMU İL SEÇİM EKRANI
+    </div>
+</h1><br />
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<form asp-controller="Home" asp-action="Index2" method="post">
+    <div class="mb-3" style="text-align:center">
+        <label for="ilSecim" class="form-label" >İl Giriniz: </label>
+        <input class="form-control" type="text" name="ilSecim" style="width: 200px; display: inline;"> <br><br>
+        <button type="submit" class="btn btn-primary">Seçildi</button>
+    </div>
+</form>
+
