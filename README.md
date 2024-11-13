@@ -42,6 +42,12 @@ Bu proje, CollectAPI kullanarak hava durumu verilerini çeken ve görüntüleyen
    private const string ApiKey = "API_ANAHTARINIZ";
    ```
 
+### Uygulamayı Çalıştırma:
+
+1. Uygulamayı derleyin ve çalıştırın.
+2. Ana sayfaya gidin ve bir şehir adı girerek o şehir için hava durumu verilerini görüntüleyin.
+
+## Ekran Görüntüleri
 
 
 ![Adsız tasarım](https://github.com/user-attachments/assets/88cd6b55-4213-4753-b901-ceba1af0c0c9)
