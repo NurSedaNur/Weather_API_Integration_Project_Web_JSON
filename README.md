@@ -77,15 +77,28 @@ This project is an ASP.NET MVC web application that fetches and displays weather
 └── wwwroot                     // Static files and dependencies
 ```
 
+## Dependencies
+
+- **ASP.NET Core MVC:** The framework used for developing the web application.
+- **RestSharp:** A library used to make HTTP requests to the CollectAPI weather service.
+- **Newtonsoft.Json:** A library used for serializing and deserializing JSON data.
+
+## Usage
+
+### Setting the API Key:
+
+1. Obtain an API key from CollectAPI.
+2. Add your API key to the `ApiKey` constant in the `WeatherService.cs` file:
+   ```csharp
+   private const string ApiKey = "YOUR_API_KEY";
+   ```
+### Running the Application:
+
+1. Compile and run the application.
+2. Go to the homepage and enter a city name to view the weather data for that city.
 
 
-
-
-
-
-
-
-## Ekran Görüntüleri
+## Ekran Görüntüleri / Screenshots
 
 
 ![Adsız tasarım](https://github.com/user-attachments/assets/88cd6b55-4213-4753-b901-ceba1af0c0c9)
